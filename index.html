@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Js-Website</title>
+  
+  <link rel="icon" href="https://d1csarkz8obe9u.cloudfront.net/posterpreviews/fast-food-logo-design-template-6498d2ad89f845b9346fb66034981725_screen.jpg?ts=1570596997">
+  <link rel="stylesheet" href="style.css">
+  <!-- fontawesome icon link -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+
+  <!-- swiper slider -->
+  <link
+    rel="stylesheet"
+    href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css"
+  />
+  <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
+</head>
+<body>
+  
+  <div class="container">
+    <nav>
+      <a href="/">
+        <img src="https://img.freepik.com/premium-vector/hat-chef-logo-vector-illustration-design_598213-1794.jpg?w=2000" alt="Logo">
+      </a>
+      <ul>
+        <li id="drink" class="item">Ichimliklar</li>
+        <li id="lavash" class="item">Lavash</li>
+        <li id="burger" class="item">Burger</li>
+        <li id="hotdog" class="item">HotDog</li>
+        <li id="order" class="item">Buyurtma Berish</li>
+      </ul>
+    </nav>
+    <div class="main">
+      <div class="swiper">
+    
+        <!-- wrapper for slide -->
+            <div class="swiper-wrapper">
+    
+            <!-- single slide -->
+                <div class="swiper-slide">
+                    <div class="wrapper">
+                        <div class="wrapper-item">
+                          <div class="left">
+                            <h2>Burger King</h2>
+                            <h3>
+                              Price Cheap $ 5.00  <span>$ 6.50</span>
+                            </h3>
+  
+                          </div>
+                          <div class="right">
+                            <img src="https://t3.ftcdn.net/jpg/02/14/83/66/360_F_214836687_ViWmBQfl0VOOMkjPmQjF9B12tfqLenO0.jpg" alt="product img">
+                          </div>
+                        </div>
+                    </div>
+                </div>
+                 <!-- single slide -->
+                 <div class="swiper-slide">
+                  <div class="wrapper">
+                      <div class="wrapper-item">
+                        <div class="left">
+                          <h2>Salqin Ichimliklar</h2>
+                          <h3>
+                            Price Cheap $ 2.00  <span>$ 3.50</span>
+                          </h3>
+
+                        </div>
+                        <div class="right">
+                          <img src="https://zamin.uz/uploads/posts/2018-02/1519147929_gazlangan.jpg" alt="product img">
+                        </div>
+                      </div>
+                  </div>
+                </div>
+                 <!-- single slide -->
+                 <div class="swiper-slide">
+                  <div class="wrapper">
+                      <div class="wrapper-item">
+                        <div class="left">
+                          <h2>Burger King</h2>
+                          <h3>
+                            Price Cheap $ 5.00  <span>$ 6.50</span>
+                          </h3>
+
+                        </div>
+                        <div class="right">
+                          <img src="https://img.freepik.com/free-photo/delicious-hot-dogs-with-mustard-onion_23-2148768194.jpg" alt="product img">
+                        </div>
+                      </div>
+                  </div>
+              </div>
+               <!-- single slide -->
+               <div class="swiper-slide">
+                <div class="wrapper">
+                    <div class="wrapper-item">
+                      <div class="left">
+                        <h2>Burger King</h2>
+                        <h3>
+                          Price Cheap $ 5.00  <span>$ 6.50</span>
+                        </h3>
+                      </div>
+                      <div class="right">
+                        <img src="https://img.freepik.com/premium-photo/shawarma-roll-lavash-grilled-meat-with-vegetables-sandwich-cut-white-background-horizontal-copy-spase_322022-355.jpg" alt="product img">
+                      </div>
+                    </div>
+                </div>
+            </div>
+            </div>
+    
+            <!-- pagination -->
+            <div class="swiper-pagination"></div>
+    
+            <!-- navigation buttton -->
+            <div class="swiper-button-prev"></div>
+            <div class="swiper-button-next"></div>
+      </div> 
+    </div>
+    <footer>
+      <div class="footer-content">
+        <h2>Address</h2>
+        <ul>
+          <li>Navoiy street home-15</li>
+          <li>Namangan city Uzbekistan</li>
+          <li>King-Burger.uz</li>
+          <li>+998-88-808-88-88</li>
+        </ul>
+      </div>
+
+      <div class="footer-content">
+        <h2>Burger King</h2>
+        <ul>
+          <li>Ichimliklar</li>
+          <li>Lavash</li>
+          <li>Burger</li>
+          <li>Hot-Dog</li>
+        </ul>
+      </div>
+
+      <div class="footer-content">
+        <h2>Contact Us</h2>
+        <ul>
+          <li>Home Page</li>
+          <li>Contact us</li>
+          <li>About us</li>
+          <li><i class="fa-brands fa-youtube"></i>
+          </li>
+
+          
+        </ul>
+      </div>
+  
+    </footer>
+  </div>
+  
+    <script src="https://unpkg.com/swiper@8/swiper-bundle.min.js"></script> 
+    <script type="module">
+        import Swiper from 'https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.mjs'
+        const swiper = new Swiper('.swiper', {
+            autoplay: true,
+            loop: true, // creates a infinite loop of slides
+            navigation: { // activate navigation with navigation buttons
+            nextEl: '.swiper-button-next',
+            prevEl: '.swiper-button-prev',
+        },
+        pagination: {// activate paginations
+            el: '.swiper-pagination',
+            type: 'bullets',
+            clickable: true,
+        },
+
+        // keyboard and mousewheel navigation
+        keyboard: true,
+        mousewheel: true,
+        slidesPerView: 1,
+        spaceBetween: 5,
+      // Responsive breakpoints
+      breakpoints: {
+          // when window width is >= 320px
+          320: {
+          slidesPerView: 1,
+          spaceBetween: 20
+          },
+          // when window width is >= 480px
+          480: {
+          slidesPerView: 2,
+          spaceBetween: 30
+          },
+          // when window width is >= 640px
+          640: {
+          slidesPerView: 1,
+          spaceBetween: 40
+          }
+    }
+        // for other than sliding effect
+
+        // effect: 'creative',
+        // creativeEffect: {
+        //  prev: {
+        //      // will set `translateZ(-400px)` on previous slides
+        //      translate: [0, 0, -400],
+        //  },
+        //  next: {
+        //      // will set `translateX(100%)` on next slides
+        //      translate: ['100%', 0, 0],
+        //  },
+        // },
+        // effect: 'coverflow',
+        })
+    </script>
+
+  <script src="app.js"></script>
+</body>
+</html>
